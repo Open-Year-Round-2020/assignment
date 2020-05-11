@@ -1,0 +1,321 @@
+@media screen and (max-width: 855px) {
+    .leftSide {
+        display: none;
+    }
+    
+    .foot{
+        /* max-width: 360px; */
+        width: 360px;
+        text-align: center;
+    }
+
+    .rightFoot{
+        display: inline-block;
+    }
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+
+.main {
+    display: flex;
+    margin: 40px auto 0px;
+    padding: 0px 0px 44px;
+    overflow: auto;
+    position: relative;
+}
+
+.lastTag {
+    margin: auto;
+    display: flex;
+}
+
+.leftSide {
+    margin: auto;
+    margin: 0 -20px 0 -50px;
+    float: left;
+    width: 454px;
+    height: 618px;
+    position: relative;
+}
+
+.outsideImg{
+    position: absolute;
+
+}
+
+.insideImg{
+    left: 151px;
+    top: 100px;
+    position: absolute;
+}
+
+.rightSide {
+    float: right auto;
+    position: relative;
+}
+
+.upPart {
+    margin: 30px 0px 10px 0px;
+    text-align: center;
+    width: 350px;
+    height: 380px;
+    border: 1px solid #D3D3D3;
+    background-color: rgba(var(--d87, 255, 255, 255), 1);
+}
+
+/* 
+.upPart .ci {
+    width: 175px;
+    height: 50px;
+    overflow: hidden;
+} */
+
+.imgInstagram1 {
+    padding: 0;
+    margin: 32px 85px 32px 85px;
+    width: 175px;
+    height: 50px;
+    overflow: hidden;
+    /* right: 100px; */
+}
+
+.ci1 {
+    right: 98px;
+    position: relative;
+}
+
+.phoneNum {
+    margin-bottom: 6px;
+    padding: 9px 0px 7px 8px;
+    width: 270px;
+    height: 20px;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.password {
+    margin-bottom: 6px;
+    padding: 9px 0px 7px 8px;
+    width: 270px;
+    height: 20px;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+button {
+    margin-top: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 279px;
+    height: 30px;
+    background: #b2ddef;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.text {
+    margin: 10px 37px 18px;
+    position: relative;
+}
+
+.text h4 {
+    margin: 0px 18px;
+    display: inline;
+    color: #8E8E8E;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.line1 {
+    /* margin-top: 20px; */
+    float: left;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100px;
+    height: 0.7px;
+    border: none;
+    background-color: #BDBDBD;
+}
+
+.line2 {
+    /* margin-top: 20px; */
+    float: right;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100px;
+    height: 0.7px;
+    border: none;
+    background-color: #BDBDBD;
+}
+.loginWithFacebook {
+    margin: 8px 37px 8px 37px;
+    width: 279px;
+    height: 30px;
+    text-align: center;
+}
+
+.lastblock{
+    width: 168px;
+    margin-left: 60px;
+    padding: 0;
+    display: flex;
+}
+
+.loginWithFacebook a {
+    margin-left: 8px;
+    padding: 0;
+    font-size: 14px;
+    color: #385185;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imgInstagram2 {
+    /* margin-right: 10px; */
+    padding: 0;
+    /* margin: 32px 85px 32px 85px; */
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    /* right: 100px; */
+}
+
+.ci2 {
+    margin: 0;
+    right: 320px;
+    bottom: 224px;
+    position: relative;
+}
+
+.forgotPassword {
+    margin-top: 13px;
+}
+
+.forgotPassword a {
+
+    font-size: 12px;
+    color: #00376B;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.midPart {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 65px;
+    border: 1px solid #D3D3D3;
+    background-color: rgba(var(--d87, 255, 255, 255), 1);
+}
+
+.midPart p {
+    margin: 15px;
+    padding-top: 8px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.midPart a {
+    text-decoration: none;
+    color: #0095F6;
+    font-weight: bold;
+}
+
+.downPart {
+    text-align: center;
+}
+
+.downPart p {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.appleImg {
+    width: 136px;
+    height: 40px;
+}
+
+.androidImg {
+    width: 136px;
+    height: 40px;
+}
+
+footer {
+    height: 100px;
+    padding: 0 20px 0 20px;
+    /* vertical-align: middle; */
+}
+
+.foot {
+    max-width: 1000px;
+    height: 50px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    /* text-align: right; */
+}
+
+.leftFoot {
+    /* width: 630px; */
+    float: left;
+}
+
+.leftFoot ul {
+    /* width: 630px; */
+    padding: 0;
+    margin: 0;
+    /* float: left; */
+    /* display: inline; */
+    list-style-type: none;
+}
+
+.leftFoot li {
+    display: inline-block;
+    margin: 0px 12px 7px 0px;
+}
+
+.leftFoot li a {
+    text-decoration: none;
+    color: #00376B;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* 
+span{
+    margin-bottom: 7px;
+} */
+
+.lastList{
+    text-decoration: none;
+    color: #00376B;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rightFoot {
+    width: auto;
+}
+
+.rightFoot a {
+    text-decoration: none;
+    float: right;
+    color: #8E8E8E;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
