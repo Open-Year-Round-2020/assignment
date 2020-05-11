@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/phoneStyles.css" />
+    <link rel="stylesheet" href="./styles/formStyles.css" />
+    <link rel="stylesheet" href="./styles/footerStyles.css" />
+    <link rel="stylesheet" href="./styles/mediaQuery.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./images/favicon_small.png" />
+    <title>Instagram</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container__main">
+        <div class="main__phone">
+          <div class="phone__frame">
+            <div class="phone__inner-img"></div>
+          </div>
+        </div>
+        <div class="main__form">
+          <div class="form__login">
+            <img
+              class="login__title"
+              src="./images/instagramLogo.png"
+              alt="title"
+            />
+            <div class="login__idpw">
+              <input
+                class="idpw__id"
+                type="text"
+                placeholder="전화번호, 사용자 이름 또는 이메일"
+              />
+              <input class="idpw__pw" type="password" placeholder="비밀번호" />
+            </div>
+            <div class="login__btn">로그인</div>
+            <div class="login__or">
+              <div class="or__bar"></div>
+              <div class="or__text">또는</div>
+              <div class="or__bar"></div>
+            </div>
+            <div class="login__facebook-login">
+              <i class="fab fa-facebook-square"></i>
+              <div class="facebook-login__text link">Facebook으로 로그인</div>
+            </div>
+            <div class="login__forgot link">비밀번호를 잊으셨나요?</div>
+          </div>
+          <div class="form__no-account">
+            <span class="no-account__gray">계정이 없으신가요?</span>
+            <span class="no-account__blue link">가입하기</span>
+          </div>
+          <div class="form__download">
+            <div class="download__text">앱을 다운로드하세요.</div>
+            <div class="download__btns">
+              <img
+                class="btns__appstore link"
+                alt="앱스토어 다운로드"
+                src="./images/downloadAppStore.png"
+              />
+              <img
+                class="btns__playstore link"
+                alt=" 플레이스토어 다운로드"
+                src="./images/downloadPlayStore.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__footer">
+        <div class="footer__lists">
+          <div class="lists__forMediaQuery">
+            <div class="lists__list link">소개</div>
+            <div class="lists__list link">도움말</div>
+            <div class="lists__list link">홍보 센터</div>
+            <div class="lists__list link">API</div>
+            <div class="lists__list link">채용 정보</div>
+            <div class="lists__list link">개인정보처리방침</div>
+          </div>
+          <div class="lists__forMediaQueryTwo">
+            <div class="lists__list link">약관</div>
+            <div class="lists__list link">위치</div>
+            <div class="lists__list link">인기 계정</div>
+            <div class="lists__list link">해시태그</div>
+            <div class="lists__list link">언어</div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <i class="far fa-copyright"></i>
+          <div class="copyright__text">&nbsp;2020 Instagram From Facebook</div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
