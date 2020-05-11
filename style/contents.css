@@ -1,0 +1,94 @@
+.contents_user{
+  width:100% ;
+  display : flex;
+  justify-content : space-between;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.user_name
+{
+  margin-left : 5px;
+}
+
+.user_imgID
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.article_img
+{
+  width:610px;
+  margin-bottom : 20px;
+}
+
+.contents_comment
+{margin-left: 20px;
+  margin-top : 3px;
+  align-self: start;
+  font-size : 16px;
+}
+
+.contents_comment1
+{
+  margin-left: 20px;
+    align-self: start;
+    font-size : 16px;
+}
+
+.contents_comment span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.contents_comment1 span {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+
+.contents_reply
+{
+  width : 540px;
+  padding 10px 0;
+  border : none;
+  font-size : 14px;
+  border : 0;
+
+}
+
+.content_submit
+{
+  color : #c0dffd;
+  font-weight : 600;
+  font-size : 16px;
+  float : right;
+}
+
+.contents_icon
+{
+  font-size : 18px;
+  align-self: start;
+  margin-left: 20px;
+}
+
+.contents_icon i
+{
+  margin-right : 10px;
+  margin-bottom : 15px;
+}
+
+.contents_like
+{
+  margin-left: 20px;
+  align-self: start;
+}
+
+.contents_replymore
+{
+  color: darkblue;
+  align-self : start;
+  margin-left : 20px;
+}

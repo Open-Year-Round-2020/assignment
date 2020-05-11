@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/container.css">
+  <link rel="stylesheet" href="../style/contents.css">
+  <link rel="stylesheet" href="../style/modal.css">
+  <link rel="stylesheet" href="../style/recommend.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+  <div class="header">
+    <div class="header_logo">
+    <a href="index.html"><img src="../logo.png" alt="Instagram" width = 100px;  height = 30px;>
+    </a>
+    </div>
+
+    <div class="header_enter">
+    <input type = "textarea"; class = "header_search"; placeholder = &nbsp;검색>
+    </div>
+
+    <div class="header_icon">
+        <i class="fas fa-home"></i>
+        <i class="far fa-paper-plane"></i>
+        <i class="far fa-compass"></i>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-user-circle"></i>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container_contents">
+
+      <div class="contents_user">
+        <div class="user_imgID">
+          <i class="fas fa-user-alt"></i>
+          <div class="user_name">
+          hyung_junny
+          </div>
+        </div>
+        <i class="fas fa-ellipsis-h dots"></i>
+      </div>
+
+      <div class="contents_img">
+      <img src="../me.jpg" class="article_img">
+      </div>
+
+      <div class="contents_icon">
+        <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+      </div>
+      <div class="contents_like">
+      좋아요 8,451,443개
+      </div>
+      <div class="contents_comment">
+      <span class="bold">hyung_junny</span>증명사진
+      </div>
+      <div class="contents_replymore">
+        댓글 5개 모두 보기
+      </div>
+      <div class="contents_comment1">
+      <span class="bold">hyungjunmom</span>잘 나왔네!
+      </div>
+      <div class="contents_reply">
+      <br />
+      <input type="text" class="contents_reply" placeholder="댓글 달기...">
+      <div class="content_submit">게시</div>
+      </div>
+    </div>
+
+    <div class="container__recommend" >
+       <div class="recommend__user">
+         <i class="fas fa-user-circle"></i>
+         <div class="user__info">
+           <div class="info__nick">hyung_junny</div>
+           <div class="info__name">박형준</div>
+         </div>
+       </div>
+       <div class="recommend__for-you">
+         <div class="for-you__text">회원님을 위한 추천</div>
+         <div class="for-you__see">모두 보기</div>
+       </div>
+       <div class="recommend__lists">
+         <div class="lists__list">
+           <div class="list__user">
+             <i class="fas fa-user-circle list-circle"></i>
+             <div class="list__linfo">
+               <div class="linfo__nick">Open_Year_Round</div>
+               <div class="linfo__name">sejong님 외 7명이 팔로우합니다.</div>
+             </div>
+           </div>
+           <div class="list__follow">팔로우</div>
+         </div>
+
+
+         <div class="lists__list">
+           <div class="list__user">
+             <i class="fas fa-user-circle list-circle"></i>
+             <div class="list__linfo">
+               <div class="linfo__nick">nowon</div>
+               <div class="linfo__name">회원님을 팔로우합니다.</div>
+             </div>
+           </div>
+           <div class="list__follow">팔로우</div>
+         </div>
+       </div>
+
+       <div id="footer">
+         <div id="footer-menu">
+          <p>
+
+           <a href="https://about.instagram.com/about-us" div id="footer-menu">소개&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://help.instagram.com/" div id="footer-menu">도움말&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://about.instagram.com/blog/" div id="footer-menu">홍보 센터&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://www.instagram.com/developer/" div id="footer-menu">API&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://www.instagram.com/about/jobs/" div id="footer-menu">채용 정보&nbsp;&nbsp;&nbsp;</a>
+          </p>
+           <a href="https://help.instagram.com/519522125107875" div id="footer-menu">개인정보처리방침&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://help.instagram.com/581066165581870" div id="footer-menu">약관&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://www.instagram.com/explore/locations/" div id="footer-menu">위치&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://www.instagram.com/directory/profiles/" div id="footer-menu">인기 계정&nbsp;&nbsp;&nbsp;</a>
+           <a href="https://www.instagram.com/directory/hashtags/" div id="footer-menu">해시태그&nbsp;&nbsp;&nbsp;</a>
+            언어
+           </select>
+         </div>
+        <br />
+        <br />
+         <span id=footer-copyright>© 2020 INSTAGRAM FROM FACEBOOK</span>
+
+       </div>
+     </div>
+  </div>
+
+  <div class="modal hide">
+    <div class="modal_menu1">부적절한 컨텐츠 신고</div>
+    <div class="modal_menu1">팔로우 취소</div>
+    <div class="modal_menu">게시물로 이동</div>
+    <div class="modal_menu">공유하기</div>
+    <div class="modal_menu">링크 복사</div>
+    <div class="modal_menu">퍼가기</div>
+    <div class="modal_menu">취소</div>
+  </div>
+
+  <script src="../scripts/index.js"></script>
+</body>
+</html>
