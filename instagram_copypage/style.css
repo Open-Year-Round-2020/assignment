@@ -1,0 +1,91 @@
+@font-face{
+    font-family:'insta';
+    src:url("billabong.ttf");
+}
+.main {
+    padding: 50px;
+    height: 700px;
+}
+@media (max-width : 800px){
+    .media_q{
+        display:none;
+    }
+}
+.main_image {
+    text-align: right;
+    float: left;
+    width : 50%;
+}   
+.box {
+    float: left;
+    width : 50%;
+}
+.box1 {
+    margin: 15px;
+    text-align: center;
+    width : 350px;
+    border : solid #E6E6E6;
+    background-color: white;
+}
+#main_logo{
+    font-family: insta;
+    font-size: 30px;
+}
+.input{
+    border-radius: 4px;
+    width:250px;
+    height: 30px;
+    background-color: #F2F2F2;
+}
+#login{
+    border-radius: 8px;
+    background-color:#A9D0F5;
+    color: white;
+    width:260px;
+    height: 35px;
+
+}
+.box2 {
+    margin: 15px;
+    text-align: center;
+    line-height: 50px;
+    width : 350px;
+    height:50px;
+    border : solid #E6E6E6;
+    background-color: white;
+    font-size: 13px;
+}
+#app_down {
+    margin: 15px;
+    text-align: center;
+    float: center;
+    width : 350px;
+    font-size: 14px;
+}
+.download_button{
+    margin: 10px;
+    text-align: center;
+    float: left;
+    color: navy;
+}
+#information{
+    margin: 70px;
+    font-size: 13px;
+}
+#info1{
+    word-spacing: 10px;
+}
+#info2{
+    float: right;
+    color: gray;
+}
+.line{
+    display: inline-block;
+    width : 90px;
+}
+#or{
+    display: inline-block;
+    font-size: 13px;
+    font-weight:bold;
+    color:gray;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram!</title>
+    <link rel="stylesheet" href="./page1_style.css">
+    <link rel="icon" href="./favicon.png">
+</head>
+<body>
+    <div id="header">
+        <div id="logo" >
+            <img src="./insta_logo.png" alt="">
+        </div>
+        <div id="search">
+            <input type="text" placeholder="검색" id="search">
+        </div>
+        
+        <div id="icons">
+        <a href=""><img src="./icon1.png" alt="" class="icon"></a>
+        <a href=""><img src="./icon2.png" alt="" class="icon"></a>
+        <a href=""><img src="./icon3.png" alt="" class="icon"></a>
+        <a href=""><img src="./icon4.png" alt="" class="icon"></a>
+        <a href=""><img src="./icon5.jpg" alt="" class="icon"></a>
+        </div>
+    </div>
+
+    <div id="left_side">
+        <div id="left_up">
+        </div>
+        
+        <div id="left_down">
+            <div id="insta_post">
+                <!-----모달창----->
+                <button id="open"><img src="./three_dot.png" alt=""></button>
+                <div class="modal hidden">
+                    <div class="modal_overlay"></div>
+                    <div class="modal_content"> 
+                        <button>취소</button>
+                    </div>
+                </div>
+                <script>
+                    const openButton = document.getElementById("open");
+                    const modal = document.querySelector(".modal");
+                    const overlay = modal.querySelector(".modal_overlay");
+                    const closeBtn = modal.querySelector("button");
+                    
+                    const openModal = () => {
+                        modal.classList.remove("hidden");
+                    }
+                    const closeModal = ()=>{
+                        modal.classList.add("hidden");
+                    }
+
+                    overlay.addEventListener("click",closeModal)
+                    closeBtn.addEventListener("click",closeModal)
+                    openButton.addEventListener("click",openModal)
+                </script>
+
+
+                <!-----모달창----->
+                <img src="./cake_img.jpg" alt="" style="width: 600px; height: 600px;;">
+            </div>
+        </div>
+    </div>
+    
+    <div id="right_side">
+
+    </div>
+</body>
+</html>
