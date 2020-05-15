@@ -1,26 +1,31 @@
 const container = document.querySelector(".container");
-const dots = document.querySelector(".user__dots");
+const dots = document.querySelectorAll(".user__dots");
 const bg = document.querySelector(".bg");
 const modal = document.querySelector(".modal");
 const cancelBtn = modal.querySelector(".last-icon");
 const recommend = document.querySelector(".container__recommend");
 const header = document.querySelector(".header");
+const body = document.querySelector("body");
 
 function handleClick() {
+  bg.style.height = `${document.body.scrollHeight}px`;
   modal.classList.remove("hide");
   bg.classList.remove("hide");
+  body.style.overflow = "hidden";
 }
 
 function handleOutsideClick(event) {
   if (event.target === bg) {
     modal.classList.add("hide");
     bg.classList.add("hide");
+    body.style.overflow = "scroll";
   }
 }
 
 function handleCancleClick() {
   modal.classList.add("hide");
   bg.classList.add("hide");
+  body.style.overflow = "scroll";
 }
 
 function handleResize() {
@@ -37,6 +42,6 @@ function init() {
 
 init();
 window.addEventListener("resize", handleResize);
-dots.addEventListener("click", handleClick);
+dots.forEach((dot) => dot.addEventListener("click", handleClick));
 window.addEventListener("click", handleOutsideClick);
 cancelBtn.addEventListener("click", handleCancleClick);

@@ -6,6 +6,8 @@
   flex-flow: row nowrap;
   position: relative;
   padding-top: 80px;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .container__article {
@@ -20,6 +22,7 @@
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   position: relative;
+  margin-bottom: 20px;
 }
 
 .container__recommend {
