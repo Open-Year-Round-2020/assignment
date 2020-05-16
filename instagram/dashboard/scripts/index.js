@@ -6,6 +6,11 @@ const cancelBtn = modal.querySelector(".last-icon");
 const recommend = document.querySelector(".container__recommend");
 const header = document.querySelector(".header");
 const body = document.querySelector("body");
+const settings = document.querySelector(".settings");
+
+function redirectSettings() {
+  location.href = "../settings/index.html";
+}
 
 function handleClick() {
   bg.style.height = `${document.body.scrollHeight}px`;
@@ -22,7 +27,7 @@ function handleOutsideClick(event) {
   }
 }
 
-function handleCancleClick() {
+function handleCancelClick() {
   modal.classList.add("hide");
   bg.classList.add("hide");
   body.style.overflow = "scroll";
@@ -41,7 +46,9 @@ function init() {
 }
 
 init();
+
+settings.addEventListener("click", redirectSettings);
 window.addEventListener("resize", handleResize);
 dots.forEach((dot) => dot.addEventListener("click", handleClick));
 window.addEventListener("click", handleOutsideClick);
-cancelBtn.addEventListener("click", handleCancleClick);
+cancelBtn.addEventListener("click", handleCancelClick);
