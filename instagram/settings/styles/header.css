@@ -24,6 +24,7 @@ input::placeholder {
 
 .header__logo {
   width: 100px;
+  cursor: pointer;
 }
 
 .header__search {

@@ -6,27 +6,25 @@ const cancelBtn = document.querySelector(".last-icon");
 const articles = document.querySelector(".articles");
 const articlesBg = document.querySelector(".articles__bg");
 const articlesInfo = document.querySelector(".articles__info");
+const container = document.querySelector(".container__articles");
+const logo = document.querySelector(".header__logo");
 
 const data = [
   {
-    id: "c01d_br0th3r",
     img: "../images/dogsTwo.jpeg",
     likes: "4,796",
-    content: "먹지 말랬다",
+    comments: "6,753",
   },
   {
-    id: "react_idol",
     img: "../images/react.jpeg",
     likes: "17,426",
-    content:
-      "리액트 Hooks 적용하기<br><br>Hooks의 등장은 많은 것을 편리하게 만들어 주었습니다. 클래스형 컴포넌트에 의존했던 JS를 함수형으로 작성될 수 있게끔 만들어주었죠. 언어는 언어에 맞게 써야 하잖아요 ㅎㅎ..🙂",
+    comments: "13,967",
   },
   {
     id: "algorithm_is_hard",
     img: "../images/algo.jpeg",
     likes: "8,645",
-    content:
-      "DFS와 BFS<br><br>이 두 친구는 최단거리를 찾는 알고리즘입니다. 전자는 재귀, 후자는 큐를 이용해요.",
+    comments: "5,176",
   },
 ];
 
@@ -61,8 +59,52 @@ function handleMouseOut() {
   articlesInfo.classList.add("hide");
 }
 
+function renderArticle(img, likes, comments) {
+  const articlesDiv = document.createElement("div");
+  articlesDiv.classList.add("articles");
+  const articlesBackground = document.createElement("div");
+  articlesBackground.classList.add("articles__bg");
+  const articlesImg = document.createElement("img");
+  articlesImg.classList.add("articles__img");
+  articlesImg.src = img;
+  const articlesInformation = document.createElement("div");
+  articlesInformation.classList.add("articles__info");
+  const heart = document.createElement("div");
+  heart.classList.add("hearts");
+  const iconHeart = document.createElement("i");
+  iconHeart.classList.add("fas");
+  iconHeart.classList.add("fa-heart");
+  heart.appendChild(iconHeart);
+  const textHeart = document.createElement("span");
+  textHeart.innerText = likes;
+  heart.appendChild(textHeart);
+  const comment = document.createElement("div");
+  comment.classList.add("comments");
+  const iconComments = document.createElement("i");
+  iconComments.classList.add("fas");
+  iconComments.classList.add("fa-comment");
+  comment.appendChild(iconComments);
+  const textComment = document.createElement("span");
+  textComment.innerText = comments;
+  comment.appendChild(textComment);
+  articlesInformation.appendChild(heart);
+  articlesInformation.appendChild(comment);
+  articlesDiv.appendChild(articlesBackground);
+  articlesDiv.appendChild(articlesImg);
+  articlesBackground.appendChild(articlesInformation);
+  return articlesDiv;
+}
+
+function handleLogoImg() {
+  location.href = "../dashboard/index.html";
+}
+
 cog.addEventListener("click", handleClick);
 window.addEventListener("click", handleOutsideClick);
 cancelBtn.addEventListener("click", handleCancelClick);
-articles.addEventListener("mouseover", handleMouseEnter);
-articles.addEventListener("mouseout", handleMouseOut);
+logo.addEventListener("click", handleLogoImg);
+
+data.forEach((d) => {
+  const article = renderArticle(d.img, d.likes, d.comments);
+  container.appendChild(article);
+});

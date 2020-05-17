@@ -117,7 +117,10 @@
 }
 
 .container__articles {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+  gap: 25px;
+  justify-content: center;
 }
 
 .articles {
@@ -145,7 +148,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  z-index: 10;
 }
 
 .hearts i,
@@ -165,8 +167,10 @@
   height: 300px;
   background-color: rgba(12, 12, 12, 0.5);
   z-index: 5;
+  opacity: 0;
+  transition: all 0.1s linear;
 }
 
-.hide {
-  display: none;
+.articles__bg:hover {
+  opacity: 1;
 }
