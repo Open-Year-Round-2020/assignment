@@ -132,19 +132,6 @@
   transition: all 0.1s linear;
 }
 
-.articles img:hover {
-  filter: brightness(50%);
-}
-
-.articles:hover .articles__info {
-  z-index: 10;
-  color: #ffffff;
-}
-
-.articles__info:hover + .articles img {
-  filter: brightness(-50%);
-}
-
 .articles__info {
   width: 100%;
   padding: 0 50px;
@@ -157,7 +144,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  color: #ffffff;
+  z-index: 10;
 }
 
 .hearts i,
@@ -167,4 +155,18 @@
 
 .cog {
   cursor: pointer;
+}
+
+.articles__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(12, 12, 12, 0.5);
+  z-index: 5;
+}
+
+.hide {
+  display: none;
 }
