@@ -8,6 +8,7 @@ const articlesBg = document.querySelector(".articles__bg");
 const articlesInfo = document.querySelector(".articles__info");
 const container = document.querySelector(".container__articles");
 const logo = document.querySelector(".header__logo");
+const logout = document.querySelector(".logout");
 
 const data = [
   {
@@ -99,10 +100,15 @@ function handleLogoImg() {
   location.href = "../dashboard/index.html";
 }
 
+function handleLogout() {
+  location.href = "../index.html";
+}
+
 cog.addEventListener("click", handleClick);
 window.addEventListener("click", handleOutsideClick);
 cancelBtn.addEventListener("click", handleCancelClick);
 logo.addEventListener("click", handleLogoImg);
+logout.addEventListener("click", handleLogout);
 
 data.forEach((d) => {
   const article = renderArticle(d.img, d.likes, d.comments);
