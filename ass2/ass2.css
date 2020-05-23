@@ -4,11 +4,18 @@
         margin: auto;
     }
     
+    .fakeAside{
+        display: none;
+    }
+
     aside {
         display: none;
     }
-}
 
+}
+.del{
+    display: none;
+}
 /* ------------------------- end of media ------------------------- */
 
 #modal {
@@ -72,6 +79,8 @@ nav {
     height: 54px;
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(219, 219, 219);
+    position: fixed;
+    z-index: 1;
 }
 
 .mainWidth {
@@ -122,38 +131,43 @@ nav li {
 }
 
 .nav_list {
-    padding-left: 15px;
+    margin-left: 15px;
 }
 
 #one {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 #two {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 #three {
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 
 #four {
     width: 26px;
     height: 26px;
+    cursor: pointer;
 }
 
 #five {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 /* ------------------------- end of navigation ------------------------- */
 
 #container {
-    /* width: 100%; */
+    padding-top: 54px;
     height: auto;
     background-color: rgba(var(--b3f, 250, 250, 250), 1);
 
@@ -172,23 +186,25 @@ nav li {
     display: flex;
 }
 
-section {
-    margin: 30px 0;
-    margin: auto;
+#section {
+    margin: 30px auto 0;
     width: 620px;
-    height: 880px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(219, 219, 219);
+    height: auto;
     border-radius: 4px;
+}
 
+#main{
+    margin-bottom: 80px;
+    border: 1px solid rgb(219, 219, 219);
 }
 
 #sctHead {
     margin: 0;
     padding: 8px;
-    width: 604px;
+    width: 602px;
     height: 40px;
     display: flex;
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -229,16 +245,18 @@ section {
 
 #sctBody {
     height: 620px;
+    overflow: hidden;
 }
 
 #mainImg {
-    width: 620px;
-    height: 620px;
+    width: 618px;
+    height: 618px;
 
 }
 
 #sctFoot {
-    padding: 0 16px;
+    padding: 5px 16px;
+    background-color: rgb(255, 255, 255);
 }
 
 .menu {
@@ -311,6 +329,7 @@ section {
     height: 28px;
     border-top: 1px solid rgb(219, 219, 219);
     padding: 16px;
+    background-color: rgb(255, 255, 255);
 }
 
 .inputComment input{
@@ -329,11 +348,17 @@ section {
 }
 
 /*------------------------- end of SECTION -------------------------*/
-
-aside {
-    margin: 0 0 0 30px;
+.fakeAside{
+    margin: 0 0 0 650px;
     width: 310px;
     height: 800px;
+}
+
+aside {
+    margin: 0 0 0 650px;
+    width: 310px;
+    height: 800px;
+    position: fixed;
 }
 
 #propil {

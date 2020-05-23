@@ -16,23 +16,23 @@
         <div class="lastTag">
             <div class="leftSide">
                 <div class="outsideImg">
-                    <img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" alt="">
+                    <img src="./image/instagram_img_outside.png" alt="">
                 </div>
                 <div class="insideImg">
-                    <img src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg" alt="">
+                    <img src="./image/instagram_img_inside.jpg" alt="">
                 </div>
             </div>
             <div class="rightSide">
                 <div class="upPart">
                     <div class="imgInstagram1">
                         <img class="ci1"
-                            src="https://www.instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png"
+                            src="./image/instagram_imgSum.png"
                             alt="">
                     </div>
                     <div class="info">
-                        <input class="phoneNum" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-                        <input class="password" type="text" placeholder="비밀번호">
-                        <button><a href="#">로그인</a></button>
+                        <input class="id" id="ID" onkeyup="color_change()" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                        <input class="password" id="PASSWORD" onkeyup="color_change()" type="password" placeholder="비밀번호">
+                        <button id="logIn_button" onclick="log_in()"><a href="#"></a>로그인</a></button>
                         <div class="text">
                             <div class="line1"></div>
                             <h4>또는</h4>
@@ -95,6 +95,7 @@
                 <a href="#">© 2020 Instagram from Facebook</a></span>
         </div>
     </footer>
+    <script src="./ass1.js"></script>
 </body>
 
 </html>

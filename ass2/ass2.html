@@ -29,7 +29,8 @@
                     <li><img src="ass2_image/nav_image2.png" alt="direct message" id="two" class="nav_list"></li>
                     <li><img src="ass2_image/nav_image3.png" alt="" id="three" class="nav_list"></li>
                     <li><img src="ass2_image/nav_image4.png" alt="" id="four" class="nav_list"></li>
-                    <li><img src="ass2_image/nav_image5.png" alt="UserImage" id="five" class="nav_list"></li>
+                    <li><img src="ass2_image/nav_image5.png" alt="UserImage" id="five" class="nav_list"
+                            onclick="page_href()"></li>
                 </ul>
             </div>
 
@@ -48,24 +49,24 @@
             <button type="button" class="normal">퍼가기</button>
             <button type="button" id="closeModal">취소</button>
         </div>
-        <div class="modal_layer"></div>
+        <div class="modal_layer" id="bgr"></div>
     </div>
 
     <!-- mainPage starts -->
     <div id="container">
         <div id="mainPage">
             <div id="LastTag">
-                <section>
-                    <div id="main">
+                <div id="section">
+                    <div class="del" id="main">
                         <div id="sctHead">
                             <div id="sctHeadImg"><img src="ass2_image/nav_image5.png" alt="UserImage"></div>
                             <div id="Lastcover">
-                                <div id="sctHeadNickName"><a href="#">ohcgnam</a></div>
+                                <div id="sctHeadNickName" scrollDown()><a href="#">ohcgnam</a></div>
                                 <button type="button" id="modal_open">···</button>
                             </div>
                         </div>
                         <div id="sctBody">
-                            <img src="ass2_image/main_img.png" alt="uploadedImg" id="mainImg">
+                            <img class="" src="./ass2_image/main1_img.png" alt="uploadedImg" id="mainImg">
                         </div>
                         <div id="sctFoot">
                             <div class="menu">
@@ -96,7 +97,8 @@
                             <span>게시</span>
                         </div>
                     </div>
-                </section>
+                </div>
+                <div class="fakeAside"></div>
                 <aside>
                     <div id="propil">
                         <img src="ass2_image/propil_img.png" alt="" id="propilImg">
