@@ -13,7 +13,6 @@ document.getElementById("bgr").onclick = function () {
     document.body.style.overflowY = "visible";
 }
 
-
 let footer = [];
 for (let i = 2; i < 9; i++) {
     footer[i] = document.createElement("div");
@@ -25,6 +24,10 @@ for (let i = 2; i < 9; i++) {
 
 }
 
-function page_href() {
+function page_href2() {
+    location.href = "./ass2.html";
+}
+
+function page_href3() {
     location.href = "../ass3/ass3.html";
 }

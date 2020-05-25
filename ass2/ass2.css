@@ -96,6 +96,7 @@ nav {
     width: 365px;
     height: 30px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 #navMid {

@@ -2,6 +2,11 @@ function page_href_1() {
     location.href = "../ass2/ass2.html";
 }
 
+
+function page_href2() {
+    location.href = "../ass2/ass2.html";
+}
+
 function page_href_5() {
     location.href = "./ass3.html";
 }
