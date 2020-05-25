@@ -11,15 +11,18 @@ document.getElementById("modal_popup").onclick = function() {
 }   
 
 
+
 function add_div() {
     for(let i = 0; i < 2; i++){
         let copy = document.getElementById('feed_group');
         let copy1 = copy.cloneNode(true);
         feed.appendChild(copy1);
-        let imgarray = new Array('images/0_p.jpg', 'images/1_p.jpg');
-        document.getElementsByClassName('feed_photo').src = imgarray[0];
+        
+        
     }
 }
 
 add_div();
 
+let imgarray = new Array('images/0_p.jpg', 'images/1_p.jpg');
+document.getElementById('feed_photo').src = imgarray[0];

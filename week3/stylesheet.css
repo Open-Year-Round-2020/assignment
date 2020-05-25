@@ -142,6 +142,17 @@ body {
     margin-bottom: 20px;
 }
 
+#input_container { position:relative; }
+
+#input_img {
+    display: none;
+    position:absolute;
+    bottom:12px;
+    right:50px;
+    width:24px;
+    height:24px;
+}
+
 #hr_or {
 	display: flex;
 	flex-basis: 100%;
