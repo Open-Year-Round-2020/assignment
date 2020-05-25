@@ -10,6 +10,16 @@
   top : 0;
 }
 
+input::placeholder {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 600;
+}
+
 .header_enter
 {
   text-align : center;
@@ -35,7 +45,6 @@
 {
   font-size : 5px;
     text-decoration : none;
-    position : fixed;
 }
 
 #footer-menu {

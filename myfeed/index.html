@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hyung_junny</title>
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/container.css">
+  <link rel="stylesheet" href="../style/contents.css">
+  <link rel="stylesheet" href="../style/modal.css">
+  <link rel="stylesheet" href="../style/recommend.css">
+  <link rel="stylesheet" href="../style/myfeed.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  <style>
+    #footers {
+      margin-bottom: 30px;
+      margin-top : 150px;
+    }
+
+    #footers-menu {
+      font-size: 12px;
+      color: #00356b;
+      float: left;
+      padding-left: 20px;
+    }
+
+
+    #footers-menu a:link {
+      text-decoration: none;
+    }
+
+    #footers-menu select {
+      display: inline;
+      /* 네이티브 외형 감추기 */
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-size: 12px;
+      color: #003569;
+      border: none;
+      background-color: rgb(245, 245, 245);
+    }
+
+    #footers-copyright {
+      font-size: 12px;
+      color: gray;
+      padding-right: 20px;
+      float: right;
+    }
+
+    .a{
+      background-color:black; width:293px; height:294px; color:white; position:absolute; top:49.7vh; left:20.3vw; text-align:center; line-height:294px; opacity:0;
+
+    }
+
+    .a:hover
+    {
+    cursor:pointer;
+    opacity:0.5;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <div class="header">
+    <div class="header_logo">
+    <a href="../login/index.html"><img src="../logo.png" alt="Instagram" width = 100px;  height = 30px;>
+    </a>
+    </div>
+
+    <div class="header_enter">
+      <input
+        type="text"
+        class="header__search"
+        placeholder="&#xf002;&nbsp;검색"
+        style = "text-align : center"
+      />
+    </div>
+
+    <div class="header_icon">
+        <i class="fas fa-home"></i>
+        <i class="far fa-paper-plane"></i>
+        <i class="far fa-compass"></i>
+        <i class="far fa-heart"></i>
+        <a href="../myfeed/index.html" style = "text-decoration : none; color : black;"><i class="fas fa-user-circle"></i></a>
+    </div>
+  </div>
+
+<div class="feedmain">
+  <div class = "mypic">
+    <div class = "feed_left">
+      <img src="../me.jpg" />
+      </div>
+
+      <div>
+        <div class = "id">
+          <h1>Hyung_junny</h1>
+          <input type = "button" value = "프로필 편집" / />
+          <i class="fas fa-cog"></i>
+        </div>
+
+    <div class = "info">
+      게시물&nbsp;<strong>4</strong>
+      팔로워&nbsp;<strong>9.2만</strong>
+      팔로잉&nbsp;<strong>1</strong>
+      </div>
+
+    <div style = "font-size : 16px">
+      <strong>박형준</strong></div>
+      <div style = "font-size : 14px">
+        OpenYearRound
+        </div>
+        </div>
+  </div>
+
+  <div class="post">
+        <div class="category">
+          <span style="color : black;"><i class="fas fa-table" style = "margin : 0 10px 0 0"></i>게시물</span>
+          <span><i class="fas fa-tv" style = "margin : 0 10px 0 0"></i>IGTV</span>
+          <span><i class="fas fa-bookmark" style = "margin : 0 10px 0 0"></i>저장됨</span>
+          <span><i class="fas fa-user" style = "margin : 0 10px 0 0"></i>태그됨</span>
+        </div>
+
+        <div class="photoLine">
+          <div id="photo">
+            <!-- <img src="img/photo2.png" /> -->
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="a">
+  <i class="fas fa-heart"></i>
+  999999
+  &nbsp;&nbsp;<i class="fas fa-comment"></i>
+  228
+  </div>
+
+  <script id="myfeedpicture">
+      var imgs = ['../photo.jpg', '../photo0.jpg', '../photo1.jpg', '../photo2.jpg'];
+
+
+      for(var j=0;j<imgs.length;j++)
+      {
+        const photo = document.querySelector("#photo");
+        const imgTag = document.createElement("img");
+        imgTag.src = imgs[j];
+        photo.appendChild(imgTag);
+      }
+
+  </script>
+
+<div id="footers">
+  <div id="footers-menu">
+    <a href="https://about.instagram.com/about-us">소개&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://help.instagram.com/">도움말&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://about.instagram.com/blog/">홍보 센터&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.instagram.com/developer/">API&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.instagram.com/about/jobs/">채용 정보&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://help.instagram.com/519522125107875">개인정보처리방침&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://help.instagram.com/581066165581870">약관&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.instagram.com/explore/locations/">위치&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.instagram.com/directory/profiles/">인기 계정&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.instagram.com/directory/hashtags/">해시태그&nbsp;&nbsp;&nbsp;</a>
+
+    <select class="언어" name="언어">
+      <option value="" disabled selected>언어</option>
+      <option value="한국어">한국어</option>
+      <option value="English">영어</option>
+      <option value="France">불어</option>
+    </select>
+  </div>
+
+  <span id=footers-copyright>© 2020 INSTAGRAM FROM FACEBOOK</span>
+
+
+</div>
+
+</body>
+
+</html>

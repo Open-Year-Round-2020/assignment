@@ -20,12 +20,17 @@
 <body>
   <div class="header">
     <div class="header_logo">
-    <a href="index.html"><img src="../logo.png" alt="Instagram" width = 100px;  height = 30px;>
+    <a href="index.html">
+      <img src="../logo.png" alt="Instagram" width = 100px;  height = 30px;>
     </a>
     </div>
 
     <div class="header_enter">
-    <input type = "textarea"; class = "header_search"; placeholder = &nbsp;검색>
+      <input
+        type="text"
+        placeholder="&#xf002;&nbsp;검색"
+        style = "text-align : center"
+      />
     </div>
 
     <div class="header_icon">
@@ -33,17 +38,20 @@
         <i class="far fa-paper-plane"></i>
         <i class="far fa-compass"></i>
         <i class="far fa-heart"></i>
-        <i class="fas fa-user-circle"></i>
+        <a href="../myfeed/index.html" style = "text-decoration : none; color : black;"><i class="fas fa-user-circle"></i></a>
     </div>
   </div>
-  <div class="container">
+
+  <div class="container"  style="padding-right:150px;">
     <div class="container_contents">
 
       <div class="contents_user">
         <div class="user_imgID">
-          <i class="fas fa-user-alt"></i>
+          <a href="../myfeed/index.html" style = "text-decoration : none; color : black;"><i class="fas fa-user-alt"></i></a>
           <div class="user_name">
+            <a href="../myfeed/index.html" style = "text-decoration : none; color : black;">
           hyung_junny
+            </a>
           </div>
         </div>
         <i class="fas fa-ellipsis-h dots"></i>
@@ -77,7 +85,7 @@
       </div>
     </div>
 
-    <div class="container__recommend" >
+    <div class="container__recommend">
        <div class="recommend__user">
          <i class="fas fa-user-circle"></i>
          <div class="user__info">
@@ -130,7 +138,6 @@
            <a href="https://www.instagram.com/directory/profiles/" div id="footer-menu">인기 계정&nbsp;&nbsp;&nbsp;</a>
            <a href="https://www.instagram.com/directory/hashtags/" div id="footer-menu">해시태그&nbsp;&nbsp;&nbsp;</a>
             언어
-           </select>
          </div>
         <br />
         <br />
@@ -141,12 +148,12 @@
   </div>
 
   <div class="modal hide">
-    <div class="modal_menu1">부적절한 컨텐츠 신고</div>
-    <div class="modal_menu1">팔로우 취소</div>
-    <div class="modal_menu">게시물로 이동</div>
-    <div class="modal_menu">공유하기</div>
-    <div class="modal_menu">링크 복사</div>
-    <div class="modal_menu">퍼가기</div>
+    <div class="modal_menu1" style="border-bottom : 1px solid gray">부적절한 컨텐츠 신고</div>
+    <div class="modal_menu1" style="border-bottom : 1px solid gray">팔로우 취소</div>
+    <div class="modal_menu" style="border-bottom : 1px solid gray">게시물로 이동</div>
+    <div class="modal_menu" style="border-bottom : 1px solid gray">공유하기</div>
+    <div class="modal_menu" style="border-bottom : 1px solid gray">링크 복사</div>
+    <div class="modal_menu" style="border-bottom : 1px solid gray">퍼가기</div>
     <div class="modal_menu">취소</div>
   </div>
 

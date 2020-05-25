@@ -1,0 +1,114 @@
+.feedmain{
+  padding : 120px 20px 0px;
+  margin : 0 auto 30px;
+  max-width : 935px;
+}
+
+.mypic{
+  margin : 0 0 44px;
+  display : grid;
+  justify-content : center;
+  grid-template-columns : 1fr 2fr;
+}
+
+.feed_left{
+  height : 150px;
+  text-align : center;
+  margin : 0 30px 0 0;
+}
+
+.feed_left img{
+  width:150px;
+  height:150px;
+  border-radius:100px;
+}
+
+.id{
+    margin : 0 0 20px;
+    height: 40px;
+}
+.id h1{
+    height: 32px;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 23px;
+}
+.id input{
+    display: inline;
+    margin-right: 20px;
+    vertical-align: middle;
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+  }
+.id img{
+    margin-right: 20px;
+    display: inline;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.info{
+  margin : 0 0 20px;
+}
+
+.info strong{
+  margin-right:25px;
+}
+
+.name{
+  font-size : 16px;
+}
+
+.post{
+   text-align: center;
+}
+
+.category{
+   height: 53px;
+   border-top: 1px solid #efefef;
+   color:#999;
+   font-size: 12px;
+   text-align: center;
+}
+
+.category span{
+   margin-right: 50px;
+   display: inline-block;
+   line-height:53px;
+   font-weight: bold;
+}
+
+.category img{
+   width: 12px;
+   height: 12px;
+   margin-right: 6px;
+}
+
+.photoLine{
+  text-align: left;
+}
+
+#photo{
+   float : left;
+   display : grid;
+   grid-template-columns: repeat(3, minmax(200px, 300px));
+   gap: 0 25px;
+   justify-content: center;
+}
+
+#photo img{
+   margin-right:10px;
+   margin-bottom: 20px;
+   width: 293px;
+   height: 293px;
+}
+
+#myfeedpicture div:hover{
+  background-color : black;
+}
