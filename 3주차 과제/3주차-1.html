@@ -48,6 +48,8 @@
                 <div class="line">
                 </div>
               </div>
+
+              <!--가입 form-->
               <form method="post">
                 <div>
                   <input class="input" type="text" value="" id="phone" placeholder="휴대폰 번호 또는 이메일 주소" /></label>
@@ -55,7 +57,9 @@
                 <div class="input2">
                   <div style="width: 228px;">
                     <span id="phone_text">휴대폰 번호 또는 이메일 주소</span>
-                    <input type="text" value="" id="phone2"/></label>
+
+                    <input type="text" value="" id="phone2"/>
+
                   </div>
                   <div id="x">
                   </div>
@@ -80,22 +84,29 @@
                   
                 </div>
                 <script>
+                  /*입력된 값이 맞는지 검사하는 함수*/
                   function validate() {
 
-                    var re = /^[a-zA-Z0-9]{4,12}$/ // 적합한지 검사할 정규식
-                    var re2 = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-                    // 이메일이 적합한지 검사할 정규식
+                    var tel = /^\d{2,3}-\d{3,4}-\d{4}$/;/*번호 정규식*/
+                    var id = document.getElementById("phone2").value;
 
-                    var id = document.getElementById("phone2");
-                    var pw = document.getElementById("password");
-
-                    if (!check(re, pw, "패스워드는 4~12자의 영문 대소문자와 숫자로만 입력")) {
-                      pw.value = "";
-                      pw.focus();
+                    if (!check(tel, id)) {
+                      alert('잘못되었습니다.');
                       return false;
                     }
+
                   }
 
+                  function check(){/*입력된 value와 같은지 검사*/
+                    return tel.exec(id);
+                  }
+
+                  var input  = document.getElementById("phone");
+
+                  input.addEventListener("focusout", e => {
+                      validate();
+                    });
+                  /*대체 함수를 언제 호출해야 되는 걸까?*/
                   /*모르겠어요...*/
 
                 </script>
