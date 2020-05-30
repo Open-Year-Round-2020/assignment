@@ -1,8 +1,9 @@
 .container{
   display : flex;
-
+  flex-direction : column;
   justify-content : center;
   padding-top : 70px;
+
 }
 
 .container_recommend
@@ -24,6 +25,8 @@
   border: 1px solid #cacaca;
   border-radius: 5px;
   margin-right: 40px;
+  margin-bottom : 50px;
+  margin-left: 320px;
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
