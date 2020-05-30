@@ -16,11 +16,11 @@ const handleClick = () => {
 
   if (inputId === "admin@admin.com" && inputPw === "admin") {
     alert("Hyung_Junny님, 환영합니다!");
-    location.href = "./login/index.html";
+    window.location.href = "./login/index.html";
   } else {
     alert("입력하신 정보가 올바르지 않습니다.");
   }
 };
 
+
 btn.addEventListener("click", handleClick);
-id.addEventListener("change", handleChange);

@@ -142,14 +142,16 @@
 
     .login-button {
       cursor: pointer;
-      margin: 10px;
       width: 268px;
       height: 31px;
+      margin-left : 32px;
       background-color: #3897F0;
       padding: 5px 9px;
       border-radius: 5px;
       border: 0px;
       font-size: 14px;
+      text-align : center;
+      line-height:30px;
     }
 
     .login-button p {
@@ -320,13 +322,13 @@ a{
               <input class="verify_id" type="text" placeholder="  전화번호, 사용자 이름 또는 이메일 " /><br>
             </div>
             <div id="input-css">
-              <input class="verify_pw" onblur="verify_pw()" type="password" placeholder="  비밀번호 " /><br>
+              <input class="verify_pw" type="password" placeholder="  비밀번호 " /><br>
             </div>
 
 
-            <button class="login-button">
+            <div class="login-button">
               <p>로그인</p>
-            </button>
+            </div>
           </form>
 
           <div id="or">
