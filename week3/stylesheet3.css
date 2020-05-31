@@ -198,12 +198,12 @@ hr { border: 1px solid #dbdbdb; }
     margin-right: 3px;
 }
 
-#photos > img {
+#f_images > img {
     width: 293px;
     margin-right: 24.5px;
 }
 
-#photos > img:last-of-type {
+#f_images > img:last-of-type {
     width: 293px;
     margin-right: 0px;
 }

@@ -11,10 +11,16 @@ document.getElementById("modal_popup").onclick = function() {
 }   
 
 function add_div() {
-    for(let i = 0; i < 3; i++){
-        let imgarray = new Array('images/p.jpg','images/0_p.jpg', 'images/1_p.jpg');
-        document.getElementById('photos').innerHTML = '<img src = \''+ imgarray[i] + '\'>';
+    var imgarray = new Array('images/0_p.jpg', 'images/1_p.jpg');
+    for(var i = 0; i < 2; i++){
+        var copy = document.getElementById('f_images');
+        var copy1 = copy.cloneNode(true);
+        console.log(copy1);
+        const photo = copy1.querySelector(".photos");
+        console.log(photo);
+        photo.src = imgarray[i];
+        wrap.appendChild(copy1);
     }
-}
+};
 
 add_div();
