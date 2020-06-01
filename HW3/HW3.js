@@ -11,6 +11,10 @@ function page_href_5() {
     location.href = "./HW3.html";
 }
 
+function page_href_0() {
+    location.href = "../HW1/HW1.html";
+}
+
 let WRAP = [];
 let POST = [];
 for (let i = 0; i < 7; i++) {
