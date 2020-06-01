@@ -103,6 +103,33 @@ display: flex;
   border-radius: 70%;
 }
 
+.profile_img{
+  border-radius: 70%;
+  width: 32px;
+}
+
+.post_img{
+  width: 612px;
+}
+
+.post_id{
+  color: #262626;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.three_dot_img{
+  margin-left: 460px;
+}
+
+
+.post_comment{
+  margin: 20px;
+  display: flex;
+}
+
+
 .main{
   padding-top: 30px;
   width: 935px;
@@ -129,6 +156,14 @@ display: flex;
   padding: 14px 16px;
   align-items: center;
   height: 29px;
+}
+
+.left_down{
+  margin-bottom: 40px;
+}
+
+.insta_post{
+  margin-bottom: 40px;
 }
 
 .main_id{
