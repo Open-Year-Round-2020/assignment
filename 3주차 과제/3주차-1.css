@@ -1,14 +1,13 @@
 body {
   background-color: rgb(250, 250, 250);
+  margin-top: 130px;
 }
 
 .article_part {
-  margin: 0 auto;
+  margin: 30px auto 0;
   justify-content: center;
   max-width: 935px;
   width: 100%;
-  margin-bottom: 50px;
-  margin-top: 40px;
 }
 
 .container {
@@ -19,12 +18,12 @@ body {
   height: 618px;
   float: left;
   margin-left: 80px;
-  margin-top: 40px;
 }
 
 .right_side {
   width: 350px;
-  height: 700px;
+  height: 618px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -63,9 +62,8 @@ body {
   font-size: 12px;
   height: 38px;
   width: 258px;
-  margin: 3px;
+  margin: 2px;
   padding: 10px;
-  color: rgb(38,38,38);
 }
 
 .login_button {
@@ -89,20 +87,13 @@ body {
 }
 
 .forget {
-  color: rgb(142,142,142);
+  color: #00376b;
   text-align: center;
   font-size: 12px;
   padding-bottom: 20px;
   text-decoration: none;
   font-weight: 500;
-  margin: 0 auto;
-  width: 268px;
-}
-
-.forget>a{
-  text-decoration: none;
-  color: rgb(142,142,142);
-  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .line {
@@ -176,7 +167,7 @@ footer {
 
   margin-left: 90px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .facebook_img{
@@ -200,78 +191,14 @@ footer {
   display: flex;
 }
 
-/* @media screen and (max-width: 850px) {
-  .left_side {
+
+#x_contain{
+  position: relative;
+}
+#X{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    height: 24px;
     display: none;
-  }
-} */
-
-
-
-
-#text{
-
-  color: rgb(142,142,142);
-  font-size: 17px;
-  font-weight: 600;
-  text-align: center;
-  width: 268px;
-  margin: 10px auto;
-}
-
-.facebook_login_button{
-  background: rgb(0,149,246);
-  height: 31.2px;
-  width: 258px;
-  border-radius: 5px;
-  border-width: 0px;
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  margin: 10px;
-}
-
-#phone_text{
-  color: rgb(142,142,142);
-  font-weight: 400;
-  font-size: 9px;
-  float: left;
-  margin: 2px 0 0 5px;
-}
-
-.input2{
-
-    box-sizing: border-box;
-    background-color: rgb(250, 250, 250);
-    border-radius: 3px;
-    border: 1px solid rgba(219, 219, 219, 1);
-    font-size: 12px;
-    height: 38px;
-    width: 258px;
-    margin: 3px auto;
-    color: rgb(38,38,38);
-    vertical-align: baseline;
-    display: flex;
-}
-
-.input2>div>input{
-  border: none;
-  background-color: inherit;
-  width: 220px;
-  height: inherit;
-  align-items: flex-start;
-  float: left;
-}
-.input2>div>input:focus{
-  outline: none;
-}
-
-
-.x{
-  width: 22px;
-  height: 22px;
-  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png);
-  background-position-x:-275px;
-  background-position-y:-196px;
-  margin: auto 0;
 }
