@@ -1,4 +1,5 @@
 document.getElementById("modal_open").onclick = function () {
+    console.log("1");
     document.getElementById("modal").style.display = "block";
     document.body.style.overflowY = "hidden";
 }
@@ -20,14 +21,14 @@ for (let i = 2; i < 9; i++) {
     footer[i].innerHTML = document.getElementById('main').innerHTML;
     document.getElementById('section').appendChild(footer[i]);
     let img = document.getElementById("mainImg");
-    img.src = "./ass2_image/main" + i + "_img.png";
+    img.src = "./HW2_image/main" + i + "_img.png";
 
 }
 
 function page_href2() {
-    location.href = "./ass2.html";
+    location.href = "./HW2.html";
 }
 
 function page_href3() {
-    location.href = "../ass3/ass3.html";
+    location.href = "../HW3/HW3.html";
 }

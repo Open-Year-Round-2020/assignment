@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
-    <link rel="stylesheet" href="./ass1.css">
+    <link rel="stylesheet" href="./HW1.css">
     <link rel="shortcut icon"
         href="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
-    <!-- <link rel="stylesheet" media="screen and (max-width: 855px)" href="./ass1.css" /> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 855px)" href="./HW1.css" /> -->
 </head>
 
 <body>
@@ -16,21 +16,21 @@
         <div class="lastTag">
             <div class="leftSide">
                 <div class="outsideImg">
-                    <img src="./image/instagram_img_outside.png" alt="">
+                    <img src="./HW1_image/instagram_img_outside.png" alt="">
                 </div>
                 <div class="insideImg">
-                    <img src="./image/instagram_img_inside.jpg" alt="">
+                    <img src="./HW1_image/instagram_img_inside.jpg" alt="">
                 </div>
             </div>
             <div class="rightSide">
                 <div class="upPart">
                     <div class="imgInstagram1">
                         <img class="ci1"
-                            src="./image/instagram_imgSum.png"
+                            src="./HW1_image/instagram_imgSum.png"
                             alt="">
                     </div>
                     <div class="info">
-                        <input class="id" id="ID" onkeyup="color_change()" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                        <input class="id" id="ID" onkeyup="verifyEmail(), color_change()" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
                         <input class="password" id="PASSWORD" onkeyup="color_change()" type="password" placeholder="비밀번호">
                         <button id="logIn_button" onclick="log_in()"><a href="#"></a>로그인</a></button>
                         <div class="text">
@@ -62,7 +62,7 @@
                     <P>앱을 다운로드하세요.</P>
                     <div class="down">
                         <img class="appleImg"
-                            src="image/appStore.PNG"
+                            src="HW1_image/appStore.PNG"
                             alt="">
                         <img class="androidImg"
                             src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png"
@@ -95,7 +95,7 @@
                 <a href="#">© 2020 Instagram from Facebook</a></span>
         </div>
     </footer>
-    <script src="./ass1.js"></script>
+    <script src="./HW1.js"></script>
 </body>
 
 </html>

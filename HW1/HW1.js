@@ -1,6 +1,6 @@
 function page_href() {
 
-    location.href = "../ass2/ass2.html";
+    location.href = "../HW2/HW2.html";
 
 }
 
@@ -9,7 +9,7 @@ function page_href() {
 // }
 
 var userInfo = [{
-        id: "juhwan",
+        id: "juhwan@naver.com",
         password: "111111"
     },
     {
@@ -27,14 +27,14 @@ function log_in() {
             page_href();
             return;
         } else if (ID !== userInfo[i].id && PASSWORD !== userInfo[i].password){
-            document.getElementById("ID").style.backgroundImage = "url('./image/error.png')";
-            document.getElementById("PASSWORD").style.backgroundImage = "url('./image/error.png')";
+            document.getElementById("ID").style.backgroundImage = "url('./HW1_image/error.png')";
+            document.getElementById("PASSWORD").style.backgroundImage = "url('./HW1_image/error.png')";
         }else if (ID === userInfo[i].id && PASSWORD !== userInfo[i].password){
             document.getElementById("ID").style.backgroundImage = "url('')";
-            document.getElementById("PASSWORD").style.backgroundImage = "url('./image/error.png')";
+            document.getElementById("PASSWORD").style.backgroundImage = "url('./HW1_image/error.png')";
             break;
         }else if (ID !== userInfo[i].id && PASSWORD === userInfo[i].password){
-            document.getElementById("ID").style.backgroundImage = "url('./image/error.png')";
+            document.getElementById("ID").style.backgroundImage = "url('./HW1_image/error.png')";
             document.getElementById("PASSWORD").style.backgroundImage = "url('')";
             break;
         }
@@ -51,3 +51,21 @@ function color_change() {
         document.getElementById("logIn_button").style.backgroundColor = "rgb(178, 221, 239)";
     }
 }
+
+function verifyEmail() {
+    // 이메일 검증 스크립트 작성
+    var emailVal = document.getElementById("ID").value;
+  
+    var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    // 검증에 사용할 정규식 변수 regExp에 저장
+  
+    if( emailVal.match(regExp) == null){
+        document.getElementById("ID").style.backgroundImage = "url('./HW1_image/error.png')";
+    } else{
+        document.getElementById("ID").style.backgroundImage = "";
+
+    }
+    
+    
+  };
+  

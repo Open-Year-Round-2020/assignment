@@ -35,7 +35,7 @@
 
 #modal .modal_content {
     width: 400px;
-    margin: 100px auto;
+    margin: 1px auto;
     background: rgba(var(--i30, 237, 73, 86), 1);
     border: 0;
     border-radius: 15px;
@@ -233,6 +233,7 @@ nav li {
     border-radius: 4px;
     border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
     background-color: transparent;
+    cursor: pointer;
 }
 
 #propil_setting {
@@ -241,6 +242,7 @@ nav li {
     margin-right: 13px;
     width: 28px;
     height: 28px;
+    cursor: pointer;
 }
 
 #propil_side_middle {
@@ -309,25 +311,15 @@ nav li {
 
 /*------------------------- post image start -------------------------*/
 
-#post1 {
-    margin: 10px 26.5px 10px 0;
-    /* margin-right: 26.5px; */
+.WRAP{
+    display: none;
+}
+
+#wrap{
     width: 300px;
     height: 300px;
 }
 
-#post2 {
-    margin: 10px 26.5px 10px 0;
-    width: 300px;
-    height: 300px;
-}
-
-#post3 {
-    margin: 10px 0 10px 0;
-    /* margin-right: 20px; */
-    width: 300px;
-    height: 300px;
-}
 
 #post_box {
     width: auto;

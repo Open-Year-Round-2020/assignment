@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
-    <link rel="stylesheet" href="./ass3.css">
+    <link rel="stylesheet" href="./HW3.css">
     <link rel="shortcut icon"
         href="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
 </head>
@@ -16,7 +16,7 @@
     <nav>
         <div class="mainWidth">
             <div id="navLeft">
-                <img src="ass3_image/img_Instagram.png" alt="Instagram_Img" onclick="page_href2()">
+                <img src="HW3_image/img_Instagram.png" alt="Instagram_Img" onclick="page_href2()">
             </div>
 
             <div id="navMid">
@@ -25,12 +25,12 @@
 
             <div id="navRight">
                 <ul>
-                    <li><img src="ass3_image/nav_image1.png" alt="home" id="one" class="nav_list"
+                    <li><img src="HW3_image/nav_image1.png" alt="home" id="one" class="nav_list"
                             onclick="page_href_1()"></li>
-                    <li><img src="ass3_image/nav_image2.png" alt="direct message" id="two" class="nav_list"></li>
-                    <li><img src="ass3_image/nav_image3.png" alt="" id="three" class="nav_list"></li>
-                    <li><img src="ass3_image/nav_image4.png" alt="" id="four" class="nav_list"></li>
-                    <li><img src="ass3_image/nav_image5.png" alt="UserImage" id="five" class="nav_list"
+                    <li><img src="HW3_image/nav_image2.png" alt="direct message" id="two" class="nav_list"></li>
+                    <li><img src="HW3_image/nav_image3.png" alt="" id="three" class="nav_list"></li>
+                    <li><img src="HW3_image/nav_image4.png" alt="" id="four" class="nav_list"></li>
+                    <li><img src="HW3_image/nav_image5.png" alt="UserImage" id="five" class="nav_list"
                             onclick="page_href_5()"></li>
                 </ul>
             </div>
@@ -40,18 +40,38 @@
 
     <!-- end of navigation -->
 
+    <!-- MODAL START -->
+
+    <div id="modal">
+        <div class="modal_content">
+            <button type="button" class="normal">비밀번호 변경</button>
+            <button type="button" class="normal">네임 태그</button>
+            <button type="button" class="normal">앱 및 웹사이트</button>
+            <button type="button" class="normal">알림</button>
+            <button type="button" class="normal">공개 범위 및 보안</button>
+            <button type="button" class="normal">로그인 활동</button>
+            <button type="button" class="normal">instagram에서 보낸 이메일</button>
+            <button type="button" class="normal">문제 신고</button>
+            <button type="button" class="normal">로그아웃</button>
+            <button type="button" id="closeModal">취소</button>
+        </div>
+        <div class="modal_layer" id="bgr"></div>
+    </div>
+
+    <!-- MODAL END -->
+
     <!-- mainPage starts -->
 
     <div id="container">
         <div id="mainPage">
             <div id="LastTag">
                 <div id="body_top">
-                    <img id="propil_img" src="./ass3_image/propil_img.png" alt="Propil Image">
+                    <img id="propil_img" src="./HW3_image/propil_img.png" alt="Propil Image">
                     <span id="propil_side">
                         <div id="propil_side_top">
                             <span id="nickname">ohcgnam</span>
                             <button id="propil_button">프로필 편집</button>
-                            <img id="propil_setting" src="./ass3_image/propil_setting.png" alt="">
+                            <img id="propil_setting" src="./HW3_image/propil_setting.png" alt="">
                     </span>
                 </div>
                 <div id="propil_side_middle">
@@ -65,21 +85,27 @@
             </div>
             <div id="body_middle">
                 <div id="bdy_middle_wrap">
-                    <img class="body_middle_imgs" src="./ass3_image/main_middle_img_1.png" alt="">
+                    <img class="body_middle_imgs" src="./HW3_image/main_middle_img_1.png" alt="">
                     <a href="#">게시판</a>
-                    <img class="body_middle_imgs" src="./ass3_image/main_middle_img_2.png" alt="">
+                    <img class="body_middle_imgs" src="./HW3_image/main_middle_img_2.png" alt="">
                     <a href="#">IGTV</a>
-                    <img class="body_middle_imgs" src="./ass3_image/main_middle_img_3.png" alt="">
+                    <img class="body_middle_imgs" src="./HW3_image/main_middle_img_3.png" alt="">
                     <a href="#">저장됨</a>
-                    <img class="body_middle_imgs" src="./ass3_image/main_middle_img_4.png" alt="">
+                    <img class="body_middle_imgs" src="./HW3_image/main_middle_img_4.png" alt="">
                     <a href="#">태그됨</a>
                 </div>
             </div>
             <div id="body_bottom">
                 <!-- <div class="del" id="post_box"> -->
+                <div class="WRAP" id="wrap">
                     <img class="del" id="post1" src="" alt="">
+                </div>
+                <div class="WRAP" id="wrap">
                     <img class="del" id="post2" src="" alt="">
+                </div>
+                <div class="WRAP" id="wrap">
                     <img class="del" id="post3" src="" alt="">
+                </div>
                 <!-- </div> -->
             </div>
         </div>
@@ -107,8 +133,8 @@
                 <a href="#">© 2020 Instagram from Facebook</a></span>
         </div>
     </footer>
-    
-    <script src="./ass3.js"></script>
+
+    <script src="./HW3.js"></script>
 
 </body>
 
