@@ -16,6 +16,6 @@ app.get('/profile', (req, res) => {
     res.sendFile(path.join(__dirname, 'html', 'profile.html'));
   });
 
-app.listen(3000, () => {
-  console.log('Express App on port 3000!');
+app.listen(1234, () => {
+  console.log('Express App on port 1234!');
 });
