@@ -13,7 +13,7 @@ function add_div() {
 
         const photo = copy1.querySelector(".feed_photo");
         const text = copy1.querySelector(".id_comment");
-        const like = copy1.querySelector("#like");
+        const like = copy1.querySelector("#like_t");
         const date = copy1.querySelector("#date");
         let divname = copy1.querySelector('#modaldot');
         let iconid = copy1.querySelector('#like');

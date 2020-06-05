@@ -13,6 +13,7 @@ function checking() {
 
     if(!checkEmail(emailinfo.value)) {
         document.getElementById("input_img").style.display="block";
+        alert ( '올바르지 않은 이메일입니다' )
     } else {  
           if ( emailinfo.value != 'helloworld@gmail.com' ) {
                alert ( '가입되지 않은 아이디입니다' )
