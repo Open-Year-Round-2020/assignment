@@ -12,7 +12,6 @@
 
 .container__article {
   width: 610px;
-  float: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +23,12 @@
   position: relative;
   margin-bottom: 20px;
   box-sizing: content-box;
+  transition: all 0.1s linear;
+}
+
+.container__article:hover {
+  box-shadow: 10px 10px 10px 0px rgba(29, 29, 31, 0.45);
+  transform: translatey(-5px);
 }
 
 .container__recommend {
