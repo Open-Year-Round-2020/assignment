@@ -8,3 +8,9 @@ app.set('port', 3000);
 app.get('/', function(req, res){
   res.send(path.join(__dirname+"/instagram_tasks/index.html"))
 });
+
+var server = app.listen(3000, function(){
+   console.log("Express server has started on port 3000");
+  });
+
+app.use(express.static(path.join(__dirname + "/instagram_tasks")));
