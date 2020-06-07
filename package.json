@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Open-Year-Round-2020/assignment#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }
