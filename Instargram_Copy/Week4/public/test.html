@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>아주 간단한 HTML 문서 예</title>
+
+    <style>
+        .a{
+            color:green;
+        }
+        .b{
+            font-size:20px;
+        }
+        .c{
+            width:100px;
+            height:100px;
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class='a'>
+        <div class='b'>
+            <p>이재훈</p>
+        </div>
+        <div class='c'>
+            
+        </div>
+    </div>
+
+    <div class='d'>
+
+    </div>
+    
+    <script src=https://code.jquery.com/jquery-3.5.1.min.js></script>
+    <script>
+        var temp = $('.a').clone();
+        
+        temp.appendTo('.d');
+       
+    </script>
+</body>
+</html>
