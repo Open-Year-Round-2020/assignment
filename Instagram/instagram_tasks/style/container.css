@@ -34,6 +34,7 @@
 .container_contents:hover {
   box-shadow: 7px 7px 10px 0px rgba(29, 29, 31, 0.45);
   transform: translatey(-5px);
+  transition:all 0.25s ease-in-out;
 }
 
 * {

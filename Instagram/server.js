@@ -6,7 +6,7 @@ var router = express.Router();
 app.set('port', 3000);
 
 app.get('/', function(req, res){
-  res.send(path.join(__dirname+"/instagram_tasks/index.html"))
+  res.sendFile(path.join(__dirname+"/instagram_tasks/index.html"))
 });
 
 var server = app.listen(3000, function(){
