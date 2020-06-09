@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="/week5-1.css"/>
+  <title>Instagram</title>
+</head>
+
+<body>
+  <section>
+    <main class="main">
+      <article class="article_part">
+        <div class="container">
+
+          <div class="left_side">
+            <div class="background_img">
+              <img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png" />
+            </div>
+            <div class="phone_img">
+              <img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" />
+            </div>
+          </div>
+
+          <div class="right_side">
+            <div class="login">
+              <div>
+                <h1 class="instagram"></h1>
+              </div>
+              <form method="post">
+                <div id="x_contain">
+                  <input class="input" id ="id" type="text" value="" placeholder="전화번호,사용자 이름 또는 이메일"/>
+                  <img src="/img/X.png" id="X">
+                </div>
+                <div>
+                  <input class="input" id ="password" type="password" value="" placeholder="비밀번호" />
+                </div>
+                <div>
+                  <button class="login_button" type="button" onclick="check_()">
+                    
+                      로그인
+                    
+                  </button>
+                </div>
+                <div style="margin: 10px 40px 18px; flex-direction: row; align-items: stretch; display: flex;">
+                  <div class="line">
+                  </div>
+                  <div style="font-size: 13px; color: rgb(142,142,142); margin: 0px 18px 0px 18px; font-weight: bold;">
+                    또는
+                  </div>
+                  <div class="line">
+                  </div>
+                </div>
+                <div>
+                  <div class="facebook_login">
+                    <div>
+                      <p class="facebook_img"></p>
+                    </div>
+                    <button type="button" class="facebook_button"><span>Facebook으로 로그인</span></button>
+                  </div>
+                  <div>
+                    <a href="" class="forget">비밀번호를 잊으셨나요?</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="login no_account" style="padding-bottom : 0px; ">
+              <p style="margin: 20px;">계정이 없으신가요? <a href="" style="text-decoration: none;"><span
+                    style="color: rgb(0,149,246); font-weight: bold;">가입하기</span></a></p>
+            </div>
+
+            <div>
+              <div style="margin:20px; font-size:14px;">
+                앱을 다운로드하세요.
+              </div>
+
+              <div>
+                <a
+                  href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8&amp;vt=lo"><img
+                    height=40; alt="App Store에서 이용 가능" class="Rt8TI"
+                    src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_korean-ko.png/4a5c9d62d51b.png"></a>
+
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D7FF93662-233C-49AF-8AD2-4698B77DA93F%26utm_content%3Dlo%26utm_medium%3Dbadge"><img
+                    height=40; alt="Google Play에서 이용 가능" class="Rt8TI"
+                    src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png"></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+    </main>
+
+    <footer>
+      <div class="nav">
+        <nav
+          style="display:flex; flex-direction:column; align-items:stretch; flex-shrink:0; position:relative; vertical-align:baseline; padding-left: 230px;">
+          <ul style="display:flex; list-style:none; margin: 0px 16px 0px 0px ;padding: 0;">
+            <li class="K5OFK"><a class="l93RR" href="https://about.instagram.com/about-us"
+                rel="nofollow noopener noreferrer" target="_blank">소개</a></li>
+            <li class="K5OFK"><a class="l93RR" href="https://help.instagram.com/">도움말</a></li>
+            <li class="K5OFK"><a class="l93RR" href="https://instagram-press.com/">홍보 센터</a></li>
+            <li class="K5OFK"><a class="l93RR" href="/developer/">API</a></li>
+            <li class="K5OFK"><a class="l93RR" href="/about/jobs/">채용 정보</a></li>
+            <li class="K5OFK"><a class="l93RR" href="/legal/privacy/">개인정보처리방침</a></li>
+            <li class="K5OFK"><a class="l93RR _vfM2" href="/legal/terms/">약관</a></li>
+            <li class="K5OFK"><a class="l93RR" href="/explore/locations/">위치</a></li>
+            <li class="K5OFK"><a class="l93RR" href="/directory/profiles/">인기 계정</a></li>
+            <li class="K5OFK"><a class="l93RR" href="/directory/hashtags/">해시태그</a></li>
+            <li class="K5OFK"><a class="l93RR">언어</a></li>
+          </ul>
+        </nav>
+        <span style="text-transform:uppercase; color: #8e8e8e; font-size:12px; font-weight:600; padding-top:5px;">© 2020
+          Instagram from Facebook</span>
+      </div>
+    </footer>
+
+  </section>
+
+  <script>
+
+    function checkEmail(str) {
+      var email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+       if (!email.test(str))
+       {
+        return false;
+       } 
+       else 
+       {
+        return true;
+      }
+    }
+
+    function check_() {
+      
+      var id = document.getElementById("id");
+      var pw = document.getElementById("password")
+      console.log(id.value);
+      if (!checkEmail(id.value)) {
+        document.getElementById("X").style.display = "block";
+      } 
+      else {
+        if (id.value != 'instagram@naver.com') {
+           document.getElementById("X").style.display = "none";
+           alert('가입되지 않은 아이디입니다')
+         } else {
+           if (pw.value != '1234') {
+             document.getElementById("X").style.display = "none";
+            alert('비밀번호를 확인해주세요')
+           } else {
+             document.getElementById("X").style.display = "none";
+             alert('로그인 되었습니다.\n \n 사용자:' + id.value);
+             location.href = "feed";
+          }
+         }
+      }
+    } 
+  </script>
+</body>
+
+</html>
