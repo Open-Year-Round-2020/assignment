@@ -1,0 +1,253 @@
+* {
+    margin: 0; padding: 0;
+}
+
+a { text-decoration: none; }
+
+@media screen and (max-width: 875px) { 
+
+    #footer {
+        text-align: center; 
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #footer > b > ul > li {
+        width: 200px;
+        height: 50px;
+        display: inline;
+        padding: 0 10px;
+        font-size: 12px;
+        color: #385085;
+        overflow: hidden;
+    }
+
+    #footer > p { 
+        font-size: 12px;
+        color: #8e8e8e;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 876px) { 
+
+    #footer {
+        width: 1010px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #footer > b > ul > li {
+        display: inline;
+        padding: 0 10px;
+        float: left;
+        font-size: 12px;
+        color: #385085;
+    }
+
+    #footer > p { 
+        float: right; 
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+
+}
+
+@media screen and (max-width: 1000px) { 
+
+    #wrap {
+        width: 100%; height: 800px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    #header_c {
+        width: 100%;
+        margin: 13px auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: table;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1001px) { 
+
+    #wrap {
+        width: 935px; height: 800px;
+        margin: 0 auto;
+        padding-top: 100px;
+    }
+
+    #header_c {
+        width: 940px;
+        margin: 13px auto;
+        display: table;
+        text-align: center;
+    }
+}
+
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+#header {
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: fixed;
+    z-index :1;
+}
+
+#header_c > #icon_logo, #search, #icon_h { display: table-cell; }
+
+#icon_logo {
+    width: 103px;
+    margin-top: 3px;
+    float: left;
+}
+
+#search {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #8e8e8e;
+    width: 200px;
+    height: 14px;
+    padding: 7px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#icon_h {
+    float: right;
+    overflow: hidden;
+}
+
+#icon_h > img {
+    width: 21px;
+    margin: 3px 10px 0;
+}
+
+#icon_h > a > img {
+    width: 21px;
+    margin: 3px 10px 0;
+}
+
+#header_p { margin-bottom: 70px; }
+
+#p_image {
+    width: 150px;
+    float: left;
+    margin: 0 80px;
+}
+
+#profile > span {
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+#e_profile {
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    padding: 5px 9px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+#settings {
+    width: 24px;
+    vertical-align: sub;
+}
+
+#numbers {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+#numbers > span { margin-right: 20px; }
+
+#name { font-size: 16px; }
+
+hr { border: 1px solid #dbdbdb; }
+
+#menu { 
+    height: 38px; 
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#menu > span { margin-right: 60px; color: #8e8e8e; }
+#menu > span:last-of-type { margin-right: 0px; }
+#menu > span:first-of-type { color: black; }
+
+#menu > img { 
+    width: 11px; 
+    vertical-align: inherit;
+    margin-right: 3px;
+}
+
+#f_images > img {
+    width: 293px;
+    margin-right: 24.5px;
+}
+
+#f_images > img:last-of-type {
+    width: 293px;
+    margin-right: 0px;
+}
+
+#modal_popup {
+    display: none; 
+    position: fixed; 
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modal_c {
+    background-color: #ffffff;
+    margin: 200px auto; 
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 490px;                      
+    text-align: center; 
+    font-size: 14px;
+}
+
+#m_b_1, #m_logout, .m_b { border-bottom: 1px solid #dbdbdb; }
+
+#m_b_1, .m_b, #m_logout, #m_cancel {
+    height: 33px;
+    padding-top: 15px;
+}
+
+a > #m_logout { color: black; }
+
+#m_b_1:active {
+    background-color: #e5e5e5;
+    border-radius: 10px 10px 0 0;
+}
+
+.m_b:active, #m_logout:active { background-color: #e5e5e5; }
+
+#m_cancel:active {
+    background-color: #e5e5e5;
+    border-radius: 0 0 10px 10px;
+}
