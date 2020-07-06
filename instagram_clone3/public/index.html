@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>index</title>
+    <script type="text/javascript" src="index_script.js"></script>
+    <link rel="icon" href="./index/favicon.png">
+
+</head>
+<body style="background-color: rgb(250, 250, 250)">
+    <div class = "main">
+
+        <div class="media_q">
+            <div class="main_image"><!---메인 이미지-->
+                <img src="./index/화면캡쳐.JPG" width="400">
+            </div>
+        </div>
+        
+        <div class="box"><!--메인 로그인 창-->
+            <div class="box1"><!--로그인 창-->
+                <div id="main_logo">
+                    <h1>Instagram</h1>
+                </div>
+            
+                <form action="/" method="post" >
+                    <p><input class="input" id="userId" type="text" name="username" Placeholder = "전화번호,사용자 이름 또는 이메일"></p>
+                    <p><input class="input" id="userPassword" type="text" name="password" placeholder="비밀번호"></p>
+                    <p><input type="submit" onclick="() => check" id="login_button" value="로그인"></p>
+                </form>
+                <hr class="line"> 
+                <p id="or">&nbsp;&nbsp;&nbsp;또는&nbsp;&nbsp;&nbsp;</p>
+                <hr class="line">
+                <div>
+                    <a  href="" style="text-decoration:none; color:#00376b;" href="">
+                        <h5 style="font-size:15px; margin:12px 0px;">
+                            <img src="./index/facebook_logo.png" alt="" style="width:15px;">
+                            Facebook으로 로그인
+                        </h5>
+                    </a>
+                    <a  href="" style="text-decoration:none;; color:#00376b;" href="">
+                        <h6 style="font-size:13px;  margin:15px 0px;">비밀번호를 잊으셨나요?</h6>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="box2"><!--가입하기 창-->
+                <div>
+                    <span>
+                        계정이 없으신가요?
+                    </span>
+                    <a  href="" style="text-decoration:none" href="" style="color:dodgerblue">
+                        가입하기
+                    </a>
+                </div>
+            </div>
+            <div id="app_down">
+                <p>앱을 다운로드 하세요.</p>
+            </div>
+            <div id="download_buttons">
+                <div class="download_button">
+                    <a  href="" style="text-decoration:none" href="">
+                       <img src="./index/down-button1.png" alt="" style="width:140px;margin-left: 30px;">
+                    
+                        <img src="./index/down-button2.png" alt="" style="width:140px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="information">
+        <span id="info1">
+            <a  href="" style="text-decoration:none; color:#00376b;" href="">소개</a>
+            <a  href="" style="text-decoration:none; color:#00376b;">도움말</a>
+            <a  href="" style="text-decoration:none; color:#00376b;" >홍보센터</a>
+            <a  href="" style="text-decoration:none; color:#00376b;">API</a>
+            <a  href="" style="text-decoration:none; color:#00376b;" >채용정보</a>
+            <a  href="" style="text-decoration:none; color:#00376b;" >개인정보처리방침</a>
+            <a  href="" style="text-decoration:none; color:#00376b;" >약관</a>
+            <a  href="" style="text-decoration:none; color:#00376b;">위치</a>
+            <a  href="" style="text-decoration:none; color:#00376b;" >인기계정</a>
+            <a  href="" style="text-decoration:none; color:#00376b;">해시태그</a>
+            <a  href="" style="text-decoration:none; color:#00376b;" >언어</a>
+        </span>
+
+        <span id="info2">
+            © 2020 INSTAGRAM FROM FACEBOOK
+        </span>
+    </div>
+</body>
+</html>

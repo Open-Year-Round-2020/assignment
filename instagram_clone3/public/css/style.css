@@ -1,0 +1,114 @@
+@font-face{
+    font-family:'insta';
+    src:url("../index/billabong.ttf");
+}
+.main {
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    text-align: center;
+    height: 700px;
+}
+@media (max-width : 800px){
+    .media_q{
+        display:none;
+    }
+
+    .box{
+        margin-left:22%;
+    }
+
+}
+.main_image {
+    text-align: right;
+    float: left;
+    width : 50%;
+}   
+.box {
+    float: left;
+    width : 50%;
+}
+.box1 {
+    margin: 15px;
+    text-align: center;
+    width : 350px;
+    
+    border : 1px solid #E6E6E6;
+    background-color: white;
+}
+#main_logo{
+    font-family: insta;
+    font-size: 25px;
+}
+.input{
+    border-radius: 4px;
+    width:268px;
+    height: 30px;
+    background-color: rgb(250, 250, 250);
+    border: 0.5px solid rgb(219, 219, 219);
+    font-size:13px;
+    padding : 4.5px 0px 3.5px 4px;
+    color : solid rgb(219, 219, 219);
+}
+.input:focus {
+    border-radius: 4px;
+    outline: 0.1px solid darkgrey;
+}
+#login_button{
+    border-radius: 4px;
+    background-color:#A9D0F5;
+    color: white;
+    width:268px;
+    height: 30px;
+    border: 0 solid #000;
+}
+.box2 {
+    margin: 15px;
+    text-align: center;
+    line-height: 50px;
+    width : 350px;
+    height:50px;
+    border : 1px solid #E6E6E6;
+    background-color: white;
+    font-size: 13px;
+}
+#app_down {
+    margin: 15px;
+    text-align: center;
+    float: center;
+    width : 350px;
+    font-size: 14px;
+}
+.download_button{
+    margin: 10px;
+    text-align: center;
+    float: left;
+    color: navy;
+}
+#information{
+    margin: 70px;
+    font-size: 13px;
+    width:1012px;
+    margin:auto;
+    padding-bottom: 50px;
+}
+#info1{
+    word-spacing: 10px;
+    font-weight: bold;
+    color : rgb(0, 55, 107);
+}
+#info2{
+    float: right;
+    color: gray;
+    font-weight: bold;
+}
+.line{
+    display: inline-block;
+    width : 100px;
+    border: 0.3px solid rgb(219, 219, 219);
+}
+#or{
+    display: inline-block;
+    font-size: 13px;
+    font-weight:bold;
+    color:gray;
+}
