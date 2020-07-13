@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="../css/HW2.css">
+    <link rel="shortcut icon"
+        href="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
+</head>
+
+<body>
+    <!-- navigation start -->
+
+    <nav>
+        <div class="mainWidth">
+            <div id="navLeft">
+                <img src="../image/HW2_image/img_Instagram.png" alt="Instagram_Img" onclick="page_href2()">
+            </div>
+
+            <div id="navMid">
+                <input type="text" placeholder="검색" id="search">
+            </div>
+
+            <div id="navRight">
+                <ul>
+                    <li><img src="../image/HW2_image/nav_image1.png" alt="home" id="one" class="nav_list"></li>
+                    <li><img src="../image/HW2_image/nav_image2.png" alt="direct message" id="two" class="nav_list"></li>
+                    <li><img src="../image/HW2_image/nav_image3.png" alt="" id="three" class="nav_list"></li>
+                    <li><img src="../image/HW2_image/nav_image4.png" alt="" id="four" class="nav_list"></li>
+                    <li><img src="../image/HW2_image/nav_image5.png" alt="UserImage" id="five" class="nav_list"
+                            onclick="page_href3()"></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- end of navigation -->
+
+    <div id="modal">
+        <div class="modal_content">
+            <button type="button" class="warning">부적절한 콘텐츠 신고</button>
+            <button type="button" class="warning">팔로우 취소</button>
+            <button type="button" class="normal">게시물로 이동</button>
+            <button type="button" class="normal">공유하기</button>
+            <button type="button" class="normal">링크 복사</button>
+            <button type="button" class="normal">퍼가기</button>
+            <button type="button" id="closeModal">취소</button>
+        </div>
+        <div class="modal_layer" id="bgr"></div>
+    </div>
+
+    <!-- mainPage starts -->
+    <div id="container">
+        <div id="mainPage">
+            <div id="LastTag">
+                <div id="section">
+                    <!--  -->
+                    <div class="" id="main">
+                        <div id="sctHead">
+                            <div id="sctHeadImg"><img src="../image/HW2_image/nav_image5.png" alt="UserImage"></div>
+                            <div id="Lastcover">
+                                <div id="sctHeadNickName" scrollDown()><a href="#">ohcgnam</a></div>
+                                <button type="button" id="modal_open">···</button>
+                            </div>
+                        </div>
+                        <div id="sctBody">
+                            <img class="" src="../image/HW2_image/main1_img.png" alt="uploadedImg" id="mainImg">
+                        </div>
+                        <div id="sctFoot">
+                            <div class="menu">
+                                <img src="../image/HW2_image/nav_image4.png" alt="" id="menu1" class="MENU" onclick="LIKE(count)">
+                                <img src="../image/HW2_image/good.png" alt="" id="menu2" class="MENU">
+                                <img src="../image/HW2_image/nav_image2.png" alt="" id="menu3" class="MENU">
+                                <img src="../image/HW2_image/bookmark.png" alt="" id="menu4" class="MENU">
+                            </div>
+                            <p class="goodNum">좋아요 1020 개</p>
+                            <div class="comment">
+                                <p>
+                                    <span class="Fnickname">king_of_jungle</span>
+                                    <span class="Fcomment">그전에.. 공부를 한다고..?</span>
+                                    <span><img src="../image/HW2_image/heart.png" alt=""></span>
+                                </p>
+                                <p>
+                                    <span class="Fnickname">suvelyvely</span>
+                                    <span class="Fcomment">과제하면서 계속 저생각중이야</span>
+                                    <span><img src="../image/HW2_image/heart.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="timePast">
+                                <p>1시간 전</p>
+                            </div>
+                        </div>
+                        <div class="inputComment">
+                            <input type="text" placeholder="댓글 달기...">
+                            <span>게시</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="fakeAside"></div>
+                <aside>
+                    <div id="propil">
+                        <img src="../image/HW2_image/propil_img.png" alt="" id="propilImg">
+                        <div id="propilText">
+                            <div id="nickName">ohcgnam</div>
+                            <div id="realName">킹주환</div>
+                        </div>
+                    </div>
+                    <div id="friends_story">
+                        <div id="storyHead">
+                            <span id="storyText">스토리</span>
+                            <span id="showAll">모두 보기</span>
+                        </div>
+                        <div class="main_story" id="as">
+                            <div class="story">
+                                <img src="../image/HW2_image/story1.png" alt="">
+                                <div class="friendstext">
+                                    <div class="fr_nickName">selfesteem!!</div>
+                                    <div class="fr_timePast">12초 전</div>
+                                </div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/story2.png" alt="">
+                                <div class="friendstext">
+                                    <div class="fr_nickName">hello_World</div>
+                                    <div class="fr_timePast">1분 전</div>
+                                </div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/story3.png" alt="">
+                                <div class="friendstext">
+                                    <div class="fr_nickName">king_juhwan</div>
+                                    <div class="fr_timePast">3분 전</div>
+                                </div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/story2.png" alt="">
+                                <div class="friendstext">
+                                    <div class="fr_nickName">openYearRound</div>
+                                    <div class="fr_timePast">5분 전</div>
+                                </div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/story1.png" alt="">
+                                <div class="friendstext">
+                                    <div class="fr_nickName">sejong_univ</div>
+                                    <div class="fr_timePast">7분 전</div>
+                                </div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/story3.png" alt="">
+                                <div class="friendstext">
+                                    <div class="fr_nickName">himdru</div>
+                                    <div class="fr_timePast">1시간 전</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="friends_recommend">
+                        <div id="storyHead">
+                            <span id="rcmText">회원님을 위한 추천</span>
+                            <span id="rcmshowAll">모두 보기</span>
+                        </div>
+                        <div class="main_story">
+                            <div class="story">
+                                <img src="../image/HW2_image/rcm_image1.png" alt="">
+                                <div class="friendstext" id="lastcode">
+                                    <div class="fr_nickName">quanhaha79</div>
+                                    <div class="fr_timePast">sejong1 님 외 2명이 팔로우합..</div>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/rcm_image2.png" alt="">
+                                <div class="friendstext" id="lastcode">
+                                    <div class="fr_nickName">kjk76</div>
+                                    <div class="fr_timePast">ged_28님 외 10명이 팔로우합..</div>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                            <div class="story">
+                                <img src="../image/HW2_image/rcm_image3.png" alt="">
+                                <div class="friendstext" id="lastcode">
+                                    <div class="fr_nickName">my_songjihyo</div>
+                                    <div class="fr_timePast">wkej_132님 외 5명이 팔로우합..</div>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leftFoot">
+                        <ul>
+                            <li><a href="#">소개 ·</a></li>
+                            <li><a href="#">도움말 ·</a></li>
+                            <li><a href="#">홍보 센터 ·</a></li>
+                            <li><a href="#">API ·</a></li>
+                            <li><a href="#">채용 정보 ·</a></li>
+                            <li><a href="#">개인정보처리방침 ·</a></li>
+                            <li><a href="#">약관 ·</a></li>
+                            <li><a href="#">위치 ·</a></li>
+                            <li><a href="#">인기 계정 ·</a></li>
+                            <li><a href="#">해시태그 ·</a></li>
+                            <span><a class="lastList" href="#">언어</a></span>
+                        </ul>
+                    </div>
+
+                    <span class="rightFoot">
+                        <a href="#">© 2020 Instagram from Facebook</a></span>
+
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/HW2.js"></script>
+
+</body>
+
+</html>

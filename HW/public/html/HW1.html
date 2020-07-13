@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="../css/HW1.css">
+    <link rel="shortcut icon"
+        href="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 855px)" href="./HW1.css" /> -->
+</head>
+
+<body>
+    <div class="main">
+        <div class="lastTag">
+            <div class="leftSide">
+                <div class="outsideImg">
+                    <img src="../image/HW1_image/instagram_img_outside.png" alt="">
+                </div>
+                <div class="insideImg">
+                    <img src="../image/HW1_image/instagram_img_inside.jpg" alt="">
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="upPart">
+                    <div class="imgInstagram1">
+                        <img class="ci1"
+                            src="../image/HW1_image/instagram_imgSum.png"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <input class="id" id="ID" onkeyup="verifyEmail(), color_change()" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                        <input class="password" id="PASSWORD" onkeyup="color_change()" type="password" placeholder="비밀번호">
+                        <button id="logIn_button" onclick="log_in()"><a href="#"></a>로그인</a></button>
+                        <div class="text">
+                            <div class="line1"></div>
+                            <h4>또는</h4>
+                            <div class="line2"></div>
+                        </div>
+                        <div class="loginWithFacebook">
+                            <div class="lastblock">
+                                <div class="imgInstagram2">
+                                    <img class="ci2"
+                                        src="https://www.instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png"
+                                        alt="">
+                                </div>
+                                <a href="#">Facebook으로 로그인</a>
+                            </div>
+                        </div>
+                        <div class="forgotPassword">
+                            <a href="#">비밀번호를 잊으셨나요?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="midPart">
+                    <p>계정이 없으신가요? <a href="#">가입하기</a></p>
+                </div>
+
+                <div class="downPart">
+                    <P>앱을 다운로드하세요.</P>
+                    <div class="down">
+                        <img class="appleImg"
+                            src="../image/HW1_image/appStore.PNG"
+                            alt="">
+                        <img class="androidImg"
+                            src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="leftFoot">
+                <ul>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">도움말</a></li>
+                    <li><a href="#">홍보 센터</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">채용 정보</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">약관</a></li>
+                    <li><a href="#">위치</a></li>
+                    <li><a href="#">인기 계정</a></li>
+                    <li><a href="#">해시태그</a></li>
+                    <span><a class="lastList" href="#">언어</a></span>
+                </ul>
+            </div>
+            <span class="rightFoot">
+                <a href="#">© 2020 Instagram from Facebook</a></span>
+        </div>
+    </footer>
+    <script src="../js/HW1.js"></script>
+</body>
+
+</html>
