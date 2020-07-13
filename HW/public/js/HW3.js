@@ -1,5 +1,5 @@
 function page_href_1() {
-    location.href = "loginPage";
+    location.href = "../";
 }
 
 function page_href_2() {

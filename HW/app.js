@@ -4,16 +4,13 @@ var app = express();
 var fs = require('fs');
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
-const { query } = require('express');
-const router = require('./routes/test.js');
 var db = require('./server');
 app.use(bodyParser.urlencoded({extended:false}));
 
 //라우팅
-app.use('/test/loginPage', require('./routes/pLogin.js'));
-app.use('/test/peedPage', require('./routes/pPeed.js'));
-app.use('/test/propilPage', require('./routes/pPropil.js'));
-app.use('/test', require('./routes/test.js'));
+app.use('/', require('./routes/pLogin.js'));
+app.use('/peedPage', require('./routes/pPeed.js'));
+app.use('/propilPage', require('./routes/pPropil.js'));
 
 //경로 지정
 app.use(express.static(__dirname + '/public'));

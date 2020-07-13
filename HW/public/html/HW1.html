@@ -30,9 +30,11 @@
                             alt="">
                     </div>
                     <div class="info">
-                        <input class="id" id="ID" onkeyup="verifyEmail(), color_change()" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-                        <input class="password" id="PASSWORD" onkeyup="color_change()" type="password" placeholder="비밀번호">
-                        <button id="logIn_button" onclick="log_in()"><a href="#"></a>로그인</a></button>
+                        <form action="./peedPage" method="post">
+                            <input class="id" name="id" id="ID" onkeyup="verifyEmail(), color_change()" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" autocomplete="on">
+                            <input class="password" name="password" id="PASSWORD" onkeyup="color_change()" type="password" placeholder="비밀번호" autocomplete="on">
+                            <button id="logIn_button" onclick="log_in()"><a href="#"></a>로그인</a></button>
+                        </form>
                         <div class="text">
                             <div class="line1"></div>
                             <h4>또는</h4>

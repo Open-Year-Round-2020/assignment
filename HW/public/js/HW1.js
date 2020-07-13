@@ -1,32 +1,6 @@
 function page_href() {
     location.href = "peedPage";
 }
-// var userInfo = [{
-//     id: "juhwan@naver.com",
-//     password: "111111"
-// },
-// {
-//     id: "kim",
-//     password: "222222"
-// }
-// ]
-
-/*
-} else if (ID !== userInfo[i].id && PASSWORD !== userInfo[i].password){
-    document.getElementById("ID").style.backgroundImage = "url('../image/HW1_image/error.png')";
-    document.getElementById("PASSWORD").style.backgroundImage = "url('../image/HW1_image/error.png')";
-}else if (ID === userInfo[i].id && PASSWORD !== userInfo[i].password){
-    document.getElementById("ID").style.backgroundImage = "url('')";
-    document.getElementById("PASSWORD").style.backgroundImage = "url('../image/HW1_image/error.png')";
-    break;
-}else if (ID !== userInfo[i].id && PASSWORD === userInfo[i].password){
-    document.getElementById("ID").style.backgroundImage = "url('../image/HW1_image/error.png')";
-    document.getElementById("PASSWORD").style.backgroundImage = "url('')";
-    break;
-}
-}
-}
-*/
 
 function log_in() {
     var ID = document.getElementById("ID").value;

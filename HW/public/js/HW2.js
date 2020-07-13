@@ -71,7 +71,7 @@ document.getElementById("bgr").onclick = function () {
     document.body.style.overflowY = "visible";
 }
 
-var count = 0;
+var count = 1;
 
 function like(){
     document.getElementById("menu1").src = "../image/HW2_image/nav_image4_3.png";
@@ -84,6 +84,7 @@ function unlike(){
 }
 
 function LIKE(count){
+    console.log(count);
     if(count % 2 == 1){
         like();
     }else{
